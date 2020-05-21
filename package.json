@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint src/pages/** src/components/**"
+    "lint": "eslint src/pages/** src/components/**",
+    "deploy": "now"
   },
   "dependencies": {
     "next": "9.4.2",
