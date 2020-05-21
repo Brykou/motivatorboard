@@ -2,8 +2,10 @@
   "extends": ["airbnb", "plugin:prettier/recommended"],
   "rules": {
     "react/forbid-prop-types": [1, { "forbid": ["any"] }],
+    "react/prop-types": ["error", { "ignore": ["children"] }],
     "react/jsx-filename-extension": 0,
     "react/no-multi-comp": 0,
-    "react/jsx-props-no-spreading": 0
+    "react/jsx-props-no-spreading": 0,
+    "react/require-default-props": 0
   }
 }
