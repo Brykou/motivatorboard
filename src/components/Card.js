@@ -12,16 +12,19 @@ const Card = ({ name, description, ...otherProps }) => {
         className="card"
         flexDirection="column"
         alignItems="center"
-        backgroundColor="white"
+        color="text"
+        bg="background2"
         width="160px"
         height="220px"
         p="16px"
         sx={{
           cursor: "pointer",
-          border: "solid 1px lightgray",
+          border: "solid 1px",
+          borderColor: "border",
           borderRadius: "4px",
           boxShadow: "0 5px 9px rgba(0,0,0,0.08), 0 5px 9px rgba(0,0,0,.04)",
           transition: "box-shadow .2s",
+          zIndex: 10,
           ":hover": {
             zIndex: 100,
             boxShadow: "0 10px 15px rgba(30,30,30,.1), 0 10px 8px rgba(30,30,30,.1)",

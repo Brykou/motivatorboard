@@ -1,4 +1,8 @@
 {
+  "env": {
+    "es6": true,
+    "browser": true
+  },
   "extends": ["airbnb", "plugin:prettier/recommended"],
   "rules": {
     "react/forbid-prop-types": [1, { "forbid": ["any"] }],

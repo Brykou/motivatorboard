@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Head from "next/head";
+import { ThemeContextProvider } from "../state/Theme";
 import "../style/global.css";
 
 function CustomApp({ Component, pageProps }) {
@@ -12,7 +13,9 @@ function CustomApp({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap" rel="stylesheet" />
       </Head>
-      <Component {...pageProps} />
+      <ThemeContextProvider>
+        <Component {...pageProps} />
+      </ThemeContextProvider>
     </>
   );
 }
