@@ -9,14 +9,18 @@ export default function Home() {
     <main>
       <Flex flexWrap="wrap" p="16px">
         {cards.map((card) => (
-          <Card
-            key={card.name}
-            name={card.name}
-            description={card.description}
-          />
+          <Card key={card.name} name={card.name} description={card.description} />
         ))}
       </Flex>
-      <Arrow mt="80px" />
+      <Arrow
+        sx={{
+          position: "absolute",
+          right: 0,
+          left: 0,
+          top: "calc(50% - 50px)",
+          zIndex: -1,
+        }}
+      />
     </main>
   );
 }

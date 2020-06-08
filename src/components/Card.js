@@ -7,12 +7,7 @@ import * as Icons from "./Icons";
 const Card = ({ name, description, ...otherProps }) => {
   const Icon = Icons[name];
   return (
-    <Draggable
-      axis="both"
-      handle=".card"
-      defaultPosition={{ x: 0, y: 0 }}
-      grid={[5, 5]}
-    >
+    <Draggable axis="both" handle=".card" defaultPosition={{ x: 0, y: 0 }} grid={[5, 5]}>
       <Flex
         className="card"
         flexDirection="column"
@@ -29,8 +24,7 @@ const Card = ({ name, description, ...otherProps }) => {
           transition: "box-shadow .2s",
           ":hover": {
             zIndex: 100,
-            boxShadow:
-              "0 10px 15px rgba(30,30,30,.1), 0 10px 8px rgba(30,30,30,.1)",
+            boxShadow: "0 10px 15px rgba(30,30,30,.1), 0 10px 8px rgba(30,30,30,.1)",
           },
         }}
         {...otherProps}

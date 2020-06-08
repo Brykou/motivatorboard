@@ -8,15 +8,9 @@ function CustomApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Motivators</title>
-        <meta
-          name="description"
-          content="Discover what motivates your teammates"
-        />
+        <meta name="description" content="Discover what motivates your teammates" />
         <link rel="icon" href="/favicon.ico" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap"
-          rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap" rel="stylesheet" />
       </Head>
       <Component {...pageProps} />
     </>
